@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(43, 186, 146);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    align-content: center;
+    height: 100px;
+}
+
+.board {
+    height: 470px;
+    width: 470px;
+    border-radius: 7px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border: none;
+    display: block;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 7px;
+    font-size: 100px;
+    background-color: rgb(186, 119, 43);
+    color: black;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transition: 0.3s;
+    background-color: rgb(213, 136, 49);
+}
+
+.box-hide {
+    display: none;
+}
+
+.board-msg {
+    height: 470px;
+    width: 470px;
+    border-radius: 7px;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset {
+    margin: 20px auto;
+    width: 180px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    transition: 0.3s;
+    background-color: rgb(0, 0, 0);  
+}
+
+@media (max-width: 500px){
+
+    body {
+        background-color: rgb(43, 186, 146);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        text-align: center;
+        align-content: center;
+        height: 60px;
+    }
+    
+    .board {
+        height: 290px;
+        width: 290px;
+        border-radius: 7px;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+    }
+    
+    .box {
+        height: 90px;
+        width: 90px;
+        border: none;
+        display: block;
+        box-shadow: 0 0 5px 1px black;
+        border-radius: 7px;
+        font-size: 100px;
+        background-color: rgb(186, 119, 43);
+        color: black;
+        transition: 0.3s;
+    }
+    
+    .box:hover {
+        transition: 0.3s;
+        background-color: rgb(213, 136, 49);
+    }
+    
+    .box-hide {
+        display: none;
+    }
+    
+    .board-msg {
+        height: 290px;
+        width: 290px;
+        border-radius: 7px;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #reset {
+        margin: 10px auto;
+        width: 180px;
+        height: 60px;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        transition: 0.3s;
+    }
+}
